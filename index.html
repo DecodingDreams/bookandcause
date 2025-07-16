@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoding You | Your Transformational Book</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+        }
+
+        .book-cover {
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .book-cover:hover {
+            transform: scale(1.03);
+        }
+
+        .highlight-price {
+            font-weight: bold;
+            font-size: 1.75em;
+            color: #d9534f;
+            background: linear-gradient(to right, #fcb045, #ff1f77);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 1em 0;
+            text-align: center;
+        }
+
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold text-indigo-700">Decoding You</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-700 hover:text-indigo-600 smooth-scroll">About</a>
+                <a href="#author" class="text-gray-700 hover:text-indigo-600 smooth-scroll">Author</a>
+                <a href="#reviews" class="text-gray-700 hover:text-indigo-600 smooth-scroll">Reviews</a>
+                <a href="https://rzp.io/rzp/asnnNR2" class="text-gray-700 hover:text-indigo-600">Buy Now</a>
+            </div>
+            <button class="md:hidden bg-indigo-600 text-white px-4 py-2 rounded-lg" id="mobile-menu-button">
+                Menu
+            </button>
+        </div>
+        <div class="md:hidden hidden bg-white w-full px-6 pt-2 pb-4" id="mobile-menu">
+            <a href="#about" class="block py-2 text-gray-700 hover:text-indigo-600 smooth-scroll">About</a>
+            <a href="#author" class="block py-2 text-gray-700 hover:text-indigo-600 smooth-scroll">Author</a>
+            <a href="#reviews" class="block py-2 text-gray-700 hover:text-indigo-600 smooth-scroll">Reviews</a>
+            <a href="https://rzp.io/rzp/asnnNR2" class="block py-2 text-gray-700 hover:text-indigo-600">Buy Now</a>
+        </div>
+    </nav>
+
+    <section class="pt-20 pb-16 md:pt-32 md:pb-24 bg-gradient-to-b from-indigo-50 to-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0 md:pr-10">
+                <img src="https://i.ibb.co/PZ8NFM79/Whats-App-Image-2025-07-15-at-12-53-50-1.jpg" alt="Book cover of 'Decoding You'" class="book-cover h-80 md:h-96 w-auto mx-auto rounded-lg">
+                <a href="https://rzp.io/rzp/asnnNR2" class="cta-button bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-lg mt-4 inline-block">
+                    Buy Now
+                </a>
+            </div>
+            <div class="md:w-1/2">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Decoding You</h1>
+                <p class="highlight-price">💡 Price: ₹199 only (Shipping covered)</p>
+                <p class="text-lg text-gray-600 mb-4">📦 Delivered via Speed Post | ⏱ Estimated Delivery: 4–7 days across India</p>
+                <ul class="mb-6">
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-green-500 mt-1 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Easy to understand, no prior knowledge needed</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-green-500 mt-1 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Break free from old thought loops and habits</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-green-500 mt-1 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Perfect for teens, beginners, and curious minds</span>
+                    </li>
+                </ul>
+                <p class="text-lg text-gray-600 mb-4">This is more than a book — it’s a <strong>Human Operating System (HOS)</strong> designed for self-mastery.</p>
+                <p class="text-lg text-gray-600 mb-4">🎯 Ready to meet the real you?</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">About Decoding You</h2>
+            <div class="flex flex-col md:flex-row items-center mb-16">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-10">
+                    <img src="https://i.ibb.co/gYNvhCx/Capture.png" alt="Abstract image symbolizing inner clarity and self-awareness" class="rounded-lg shadow-md w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-lg text-gray-600 mb-4">"Decoding You" is your introduction to something school never taught you — how you actually work.</p>
+                    <p class="text-lg text-gray-600 mb-4">This groundbreaking book serves as your personal manual to understanding the intricate systems that drive your thoughts, emotions, and actions. It's designed to help you uncover your inherent strengths, identify limiting beliefs, and navigate the complexities of your inner world with clarity and purpose.</p>
+                    <p class="text-lg text-gray-600 mb-4">Dive deep into practical insights and actionable strategies that will empower you to break free from old patterns, cultivate self-awareness, and design a life that truly reflects your authentic self. Whether you're just starting your journey of self-discovery or looking to deepen your understanding, "Decoding You" offers a fresh perspective and a roadmap to personal transformation.</p>
+                    <p class="text-lg text-gray-600 mb-4">It's time to unlock your full potential and create the life you've always envisioned.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="author" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">About the Author</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center">
+                <div class="md:w-2/3 md:pl-12 text-center md:text-left">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Rebant Pratap Singh</h3>
+                    <p class="text-lg text-gray-600 mb-4">Rebant Pratap Singh is a 17-year-old thinker, creator, and explorer of the human mind.</p>
+                    <p class="text-lg text-gray-600 mb-6">This is his first published book — and just the beginning of many things to come.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">What Readers Are Saying</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card p-8 rounded-lg shadow-md bg-gray-100">
+                    <p class="text-lg text-gray-600 mb-4">"An eye-opening experience! Rebant has captured the essence of self-awareness perfectly."</p>
+                    <p class="text-md font-semibold text-gray-700 mb-2">- Reader 1</p>
+                    <p class="text-lg font-bold text-yellow-500">⭐⭐⭐⭐⭐</p>
+                </div>
+                <div class="testimonial-card p-8 rounded-lg shadow-md bg-gray-100">
+                    <p class="text-lg text-gray-600 mb-4">"This book helped me understand myself better than any course ever could!"</p>
+                    <p class="text-md font-semibold text-gray-700 mb-2">- Reader 2</p>
+                    <p class="text-lg font-bold text-yellow-500">⭐⭐⭐⭐⭐</p>
+                </div>
+                <div class="testimonial-card p-8 rounded-lg shadow-md bg-gray-100">
+                    <p class="text-lg text-gray-600 mb-4">"A must-read for anyone feeling lost! It truly decodes your mind."</p>
+                    <p class="text-md font-semibold text-gray-700 mb-2">- Reader 3</p>
+                    <p class="text-lg font-bold text-yellow-500">⭐⭐⭐⭐⭐</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="purchase" class="py-16 bg-gray-50 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12">Get Your Copy Now!</h2>
+            <a href="https://rzp.io/rzp/asnnNR2" class="cta-button bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-lg">
+                Buy Now
+            </a>
+            <p class="text-md text-gray-600 mt-8">
+                📩 For any support or queries: <a href="mailto:theidelfoundation@gmail.com" class="text-indigo-600 hover:underline">theidelfoundation@gmail.com</a>
+                <br>(We respond within 24–48 hours)
+            </p>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a.smooth-scroll').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                // Check if the link is a smooth scroll to an ID or a direct external link
+                const href = this.getAttribute('href');
+                if (href.startsWith('#')) {
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                } else {
+                    // For external links, allow default behavior
+                    window.location.href = href;
+                }
+
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenu.classList.contains('block')) {
+                    mobileMenu.classList.remove('block');
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('block');
+        });
+    </script>
+</body>
+</html>
